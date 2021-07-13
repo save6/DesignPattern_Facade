@@ -4,11 +4,12 @@ class BookList():
         self.BOOKS = {"昆虫図鑑":"A-3","怪獣図鑑":"B-2","植物図鑑":"C-1","鉱物図鑑":"D-4"}
 
     def searchBook(self,bookName):
-        location = None
         #本の名前から探す
         #あればその場所を、なければNoneを返す
         if bookName in self.BOOKS:
             location = self.BOOKS[bookName]
+        else:
+            location = None
 
         return location
 
